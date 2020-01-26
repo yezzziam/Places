@@ -239,11 +239,14 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="phV-jf-YHh"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="imageOfPlace" destination="X8J-4Z-ANL" id="Z1j-AB-PwV"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tH3-zK-g5n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="zPV-Zy-SLn" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2664.8000000000002" y="-761.46926536731644"/>
+            <point key="canvasLocation" x="2535" y="-761"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="f2U-IE-cLq">
