@@ -10,7 +10,7 @@ import UIKit
 
 class AddPlaceViewController: UITableViewController {
 
-    var newPlace: Place?
+    var newPlace = Place()
     var imageIsChanged = false
     
     @IBOutlet var placeImage: UIImageView!
@@ -25,6 +25,11 @@ class AddPlaceViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        DispatchQueue.main.async {
+            self.newPlace.savePlaces()
+        }
+        
         
         saveButton.isEnabled = false
         
@@ -72,7 +77,7 @@ class AddPlaceViewController: UITableViewController {
             image = #imageLiteral(resourceName: "Dummy")
         }
         
-        newPlace = Place(name: placeName.text!, location: placeLocation.text, type: placeType.text, image: image, placeImage: nil)
+//        newPlace = Place(name: placeName.text!, location: placeLocation.text, type: placeType.text, image: image, placeImage: nil)
     }
     
     @IBAction func cancelAction(_ sender: Any) {
