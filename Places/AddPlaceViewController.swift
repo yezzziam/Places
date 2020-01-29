@@ -14,21 +14,15 @@ class AddPlaceViewController: UITableViewController {
     var imageIsChanged = false
     
     @IBOutlet var placeImage: UIImageView!
-    
     @IBOutlet var saveButton: UIBarButtonItem!
-    
     @IBOutlet var placeName: UITextField!
-    
     @IBOutlet var placeLocation: UITextField!
-    
     @IBOutlet var placeType: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         saveButton.isEnabled = false
         placeName.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
-        
         setupEditScreen()
     }
     
@@ -115,10 +109,6 @@ class AddPlaceViewController: UITableViewController {
         dismiss(animated: true)
     }
 }
-
-// MARK: tableView delegate
-
-// MARK: Text field delegate
 
 extension AddPlaceViewController: UITextFieldDelegate {
     
