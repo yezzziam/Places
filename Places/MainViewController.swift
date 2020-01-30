@@ -39,7 +39,9 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Search"
+        searchController.isActive = false
         navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = true
         definesPresentationContext = true
     }
 
@@ -94,7 +96,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             guard let indexPath = tableView.indexPathForSelectedRow else { return }
-            let place:  Place
+            let place: Place
             if isFiltering {
                 place = filteredPlaces[indexPath.row]
             } else {
