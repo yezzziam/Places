@@ -263,10 +263,14 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="amC-X5-OGL" firstAttribute="top" secondItem="hGB-QP-ngx" secondAttribute="top" id="9yM-kh-pkt"/>
                             <constraint firstItem="Nmm-zN-Odx" firstAttribute="top" secondItem="amC-X5-OGL" secondAttribute="bottom" constant="1" id="Asf-Jj-wTE"/>
+                            <constraint firstItem="amC-X5-OGL" firstAttribute="trailing" secondItem="hGB-QP-ngx" secondAttribute="trailing" id="B6Q-0d-n7j"/>
                             <constraint firstItem="amC-X5-OGL" firstAttribute="top" secondItem="hGB-QP-ngx" secondAttribute="top" id="H3Y-HM-E7G"/>
                             <constraint firstItem="amC-X5-OGL" firstAttribute="leading" secondItem="hGB-QP-ngx" secondAttribute="leading" id="UPa-hp-Ixq"/>
+                            <constraint firstItem="amC-X5-OGL" firstAttribute="leading" secondItem="hGB-QP-ngx" secondAttribute="leading" id="c5o-gG-cF7"/>
                             <constraint firstItem="amC-X5-OGL" firstAttribute="trailing" secondItem="hGB-QP-ngx" secondAttribute="trailing" id="xAx-0U-MAR"/>
+                            <constraint firstItem="Nmm-zN-Odx" firstAttribute="top" secondItem="amC-X5-OGL" secondAttribute="bottom" constant="1" id="xjI-RC-qkk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hGB-QP-ngx"/>
                     </view>
@@ -296,7 +300,7 @@
         <scene sceneID="f2U-IE-cLq">
             <objects>
                 <navigationController id="XRo-Fv-BmA" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yrE-Y5-yaN">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yrE-Y5-yaN">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
